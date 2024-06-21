@@ -46,6 +46,8 @@ app.MapControllers();
 // Add middleware here
 // Choose one option - Extension method or UseMiddleware
 //app.ConfigureExceptionHandler();
-//app.UseMiddleware<CustomExceptionHandler>();
+app.UseMiddleware<CustomExceptionHandler>();
+
+
 
 app.Run();
